@@ -25,10 +25,11 @@
 
 | 항목 | 권장 |
 |------|------|
+| 상품 | **General Purpose (GP)** — High Performance / Storage Optimized는 초기 불필요 |
 | OS | Ubuntu Server **22.04 LTS** 또는 **24.04 LTS** |
-| 사양 | 초기 테스트·고객사 10개 내외 기준 **vCPU 2Core / RAM 4GB 또는 8GB** |
+| 사양 | 초기(~10개) **2Core / 4~8GB** → 규모가 커지면 스펙업·서버 분산 ([상세](./docs/phase-2-iwinv.md)) |
 
-> 스펙은 나중에 콘솔에서 언제든 올릴 수 있습니다.
+> 스펙은 나중에 콘솔에서 언제든 올릴 수 있습니다. 고객 ~100개·~300개 규모 가이드는 Phase 2 실습 노트 참고.
 
 ### 2-2. 블록 스토리지(디스크) 분리 추가
 
@@ -76,13 +77,13 @@
 
 제어판 앱스토어/소프트웨어 메뉴에서 클릭 설치합니다.
 
-**추천 조합**
+**추천 조합** (현재 운영 서버와 호환 기준 → [docs/current-stack.md](./docs/current-stack.md))
 
 ```
-Nginx (또는 Apache) + MySQL/MariaDB + PHP 8.x
+Apache 2.4.x + MariaDB 10.6+ + PHP 7.4 / 8.x
 ```
 
-워드프레스·그누보드 등 CMS가 바로 돌아갈 수 있는 기본 환경입니다.
+기존이 Apache라 Nginx보다 이전이 수월합니다. OS는 CentOS 7(EOL) 대신 Ubuntu LTS를 씁니다.
 
 ---
 
@@ -147,10 +148,19 @@ ns2.내에이전시.com  →  스마일서브 서버 IP
 - [ ] Phase 4: 외부 백업 · 자체 네임서버
 - [ ] Phase 5: 고객 입주 · SSL · 모니터링/청구
 
+## 보고 자료
+
+| 문서 | 내용 |
+|------|------|
+| **[호스팅 방식 비교 보고](./docs/report-hosting-comparison.md)** | 카페24 리셀러 vs iwinv 장단점·구조·비용·권고 (보고용) |
+
 ## Phase별 실습 노트
 
 | Phase | 문서 |
 |-------|------|
+| 비용·왜 필요한가 | [docs/costs.md](./docs/costs.md) |
+| 카페24 리셀러 vs iwinv | [docs/cafe24-reseller-vs-iwinv.md](./docs/cafe24-reseller-vs-iwinv.md) |
+| 현재 스택 | [docs/current-stack.md](./docs/current-stack.md) |
 | 1. 도메인 | [docs/phase-1-domain.md](./docs/phase-1-domain.md) |
 | 2. iwinv | [docs/phase-2-iwinv.md](./docs/phase-2-iwinv.md) |
 | 3. 제어판 | [docs/phase-3-panel.md](./docs/phase-3-panel.md) |

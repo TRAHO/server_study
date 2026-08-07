@@ -40,13 +40,21 @@ Windows: PuTTY / Windows Terminal / PowerShell
 
 ## 3-3. 웹 스택 설치
 
+현재 운영 서버와 맞추려면 **Nginx보다 Apache**를 우선한다.  
+(기존: CentOS7 + Apache 2.4 + MariaDB 10 + PHP 7.3 → [current-stack.md](./current-stack.md))
+
 제어판 앱스토어/소프트웨어에서 클릭 설치:
 
 ```
-Nginx (또는 Apache) + MySQL/MariaDB + PHP 8.x
+Apache 2.4.x + MariaDB 10.6+ + PHP 7.4 / 8.x (다중 버전)
 ```
 
-워드프레스·그누보드가 바로 동작할 수 있는 조합이다.
+| 현재 | 신규 목표 | 메모 |
+|------|-----------|------|
+| Apache 2.4.6 | Apache 2.4.x | `.htaccess` 호환 유지 |
+| MariaDB 10.0.21 | MariaDB 10.6+ | 요구(10+) 충족 |
+| PHP 7.3.33 | 7.4 이상 (가능하면 8.x) | 7.3 EOL → 사이트별 버전 지정 |
+| CentOS 7 | (OS는 Ubuntu) | 스택만 호환, OS는 교체 |
 
 ## 다음 단계
 
