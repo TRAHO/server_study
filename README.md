@@ -148,19 +148,23 @@ ns2.내에이전시.com  →  스마일서브 서버 IP
 - [ ] Phase 4: 외부 백업 · 자체 네임서버
 - [ ] Phase 5: 고객 입주 · SSL · 모니터링/청구
 
-## 보고 자료
+## 보고·운영 자료
 
 | 문서 | 내용 |
 |------|------|
-| **[호스팅 방식 비교 보고](./docs/report-hosting-comparison.md)** | 카페24 리셀러 vs iwinv 장단점·구조·비용·권고 (보고용) |
+| **[호스팅 운영 방식 브리핑](./docs/report-hosting-comparison.md)** | 카페24 리셀러 vs iwinv 구조·특성 브리핑 |
+| [장애 대응](./docs/topics/incident-response.md) | 장애 시 역할·대응 방향 |
+| [보안](./docs/topics/security.md) | 위협 차이·완화 방법 |
+| [백업·복구](./docs/topics/backup-recovery.md) | 외부 백업·복구 운영 |
+| [사이트 이전](./docs/topics/site-migration.md) | 스택 이전·검증 |
+| [규모·운영](./docs/topics/scaling-ops.md) | 분산·병행·응대 복잡도 |
+| [비용](./docs/costs.md) | 비용 항목·필요 이유 |
+| [현재 스택](./docs/current-stack.md) | 현행 서버 스택·이전 목표 |
 
 ## Phase별 실습 노트
 
 | Phase | 문서 |
 |-------|------|
-| 비용·왜 필요한가 | [docs/costs.md](./docs/costs.md) |
-| 카페24 리셀러 vs iwinv | [docs/cafe24-reseller-vs-iwinv.md](./docs/cafe24-reseller-vs-iwinv.md) |
-| 현재 스택 | [docs/current-stack.md](./docs/current-stack.md) |
 | 1. 도메인 | [docs/phase-1-domain.md](./docs/phase-1-domain.md) |
 | 2. iwinv | [docs/phase-2-iwinv.md](./docs/phase-2-iwinv.md) |
 | 3. 제어판 | [docs/phase-3-panel.md](./docs/phase-3-panel.md) |
