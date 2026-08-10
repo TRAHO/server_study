@@ -1,7 +1,6 @@
 # 사이트 이전
 
-브리핑 → [report-hosting-comparison.md](../report-hosting-comparison.md)  
-현행 스택 → [current-stack.md](../current-stack.md)
+브리핑 → [report-hosting-comparison.md](../report-hosting-comparison.md)
 
 ## 무엇이 달라지는가
 
@@ -22,4 +21,3 @@
 3. 이전 전: 스테이징(또는 임시 도메인)에서 소스+DB 올려 보고 확인
 4. 체크: PHP 확장(mysqli, gd, mbstring, zip, curl), cron, 업로드 경로, 메일
 5. DNS 전환은 검증 후, 가능하면 TTL을 미리 낮춰 두기
-6. 입주 절차 → [phase-5-onboarding.md](../phase-5-onboarding.md)

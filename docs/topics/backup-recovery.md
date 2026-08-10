@@ -1,7 +1,6 @@
 # 백업·복구
 
-브리핑 → [report-hosting-comparison.md](../report-hosting-comparison.md)  
-구축 단계 → [phase-4-backup-dns.md](../phase-4-backup-dns.md)
+브리핑 → [report-hosting-comparison.md](../report-hosting-comparison.md)
 
 ## 무엇이 다른가
 

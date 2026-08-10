@@ -1,7 +1,7 @@
 # 규모·운영 복잡도
 
 브리핑 → [report-hosting-comparison.md](../report-hosting-comparison.md)  
-스펙 가이드 → [phase-2-iwinv.md](../phase-2-iwinv.md)
+상품·비용 → [capacity-cost-estimate.md](./capacity-cost-estimate.md)
 
 ## 무엇이 달라지는가
 
